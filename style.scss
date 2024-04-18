@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+$black: #252422;
+$light-brown: #fffcf2;
+$orange: #eb5e28;
+body {
+  margin: 0;
+  background-color: $light-brown;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1.5pt;
+  .orange {
+    color: $orange;
+    font-weight: 900;
+  }
+  a {
+    text-decoration: none;
+    text-decoration-color: #252422;
+  }
+  .App {
+    .articles {
+      margin: 50px auto;
+      width: 70%;
+      li {
+        list-style: none;
+        font-size: 14px;
+      }
+    }
+    .footer {
+      background-color: $black;
+      text-align: center;
+      color: $light-brown;
+      padding: 50px;
+    }
+    .card-container {
+      margin: 50px auto;
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+      .card {
+        border: 2px solid $black;
+        width: 300px;
+        margin: 0;
+        box-shadow: 5px 5px $orange;
+        padding: 10px 15px;
+      }
+    }
+    .headline-how-to {
+      border: 2px solid $black;
+      width: 70%;
+      margin: 50px auto;
+      padding: 30px;
+      line-height: 2rem;
+
+      li {
+        font-size: 18px;
+      }
+      .red {
+        color: red;
+        font-weight: 900;
+      }
+    }
+    .headline {
+      border: 2px solid $black;
+      width: 70%;
+      margin: 50px auto;
+      padding: 30px;
+      display: flex;
+      place-items: center;
+
+      .cta {
+        width: 65%;
+        h1 {
+          font-size: 3rem;
+          color: $orange;
+        }
+        button {
+          width: 150px;
+          font-family: "Lato", sans-serif;
+          font-weight: 700px;
+          padding: 15px;
+          border: 1px solid $black;
+          background-color: $light-brown;
+        }
+      }
+
+      img {
+        width: 360px;
+      }
+    }
+    nav {
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid $black;
+      h1 {
+        font-weight: 900;
+        font-size: 1.5rem;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          display: inline;
+          margin: 10px 100px 0 0;
+          font-size: 14px;
+          color: $black;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .headline {
+    margin-left: -30px;
+    background-image: url("https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg");
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    background-repeat: no-repeat;
+    color: white;
+
+    .cta {
+      width: 100%;
+      margin: 0 auto;
+    }
+    img {
+      display: none;
+    }
+  }
+}
